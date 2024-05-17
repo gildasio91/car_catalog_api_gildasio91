@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import { ZodError } from "zod";
 import { ApiError } from "./api.errors";
-import { status } from "../utils/HttpStatusCode";
+
 
 export const handleError = (
   error: Error,
@@ -10,7 +10,7 @@ export const handleError = (
   next: NextFunction
 ): Response => {
   if (error instanceof ZodError) {
-    console.log({ errors: error.flatten().fieldErrors });
+   
     return res.status(400).json({ errors: error.flatten().fieldErrors });
   }
 
