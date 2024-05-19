@@ -19,12 +19,15 @@ export const retrieveCarService = async (id: string): Promise<TCar> => {
 };
 
 export const partialUpdateCarService = async (id: string, payload: Partial<TCarPayload>): Promise<TCar> => {
-  const car = await prisma.car.findUnique({ where: { id } });
-
-  const updatedCar = {...car, ...payload};
+  
+  const updatedCar = await prisma.car.update({
+    data: payload,
+    where: { id },
+  });
 
   return carSchema.parse(updatedCar);
 }
+
 
 export const deleteCarService = async (id: string) => {
   return await prisma.car.delete({ where: { id } });
