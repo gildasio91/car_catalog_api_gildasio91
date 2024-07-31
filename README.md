@@ -1,3 +1,30 @@
+# API de Gerenciamento de Catálogo de Carros
+
+## Descrição do Projeto
+
+Este projeto consiste no desenvolvimento de uma API para gerenciar um catálogo de carros, implementada utilizando **TypeScript** e o **framework Express**. A API segue uma arquitetura moderna, utiliza **validações e serializações** com **Zod**, e um banco de dados **PostgreSQL** gerenciado com **Prisma**.
+
+O projeto foi desenvolvido completamente do zero, incluindo a modelagem do banco de dados, criação das rotas, e implementação de todos os serviços. Além disso, foram implementados testes automáticos para todas as rotas e serviços, garantindo a cobertura completa dos casos de sucesso e erro.
+
+## Ferramentas Utilizadas
+
+- **TypeScript**: Linguagem de programação para desenvolvimento tipado e seguro.
+- **Express**: Framework para Node.js que facilita a criação de APIs e aplicativos web.
+- **Zod**: Biblioteca para validação de esquemas e dados.
+- **Prisma**: ORM para modelagem de banco de dados e gerenciamento de migrações.
+- **PostgreSQL**: Sistema de gerenciamento de banco de dados relacional.
+- **Jest**: Framework de testes para JavaScript e TypeScript.
+- **dotenv**: Gerenciamento de variáveis de ambiente.
+
+## Funcionalidades Implementadas
+
+- **CRUD de Carros**: Criação, leitura, atualização e exclusão de carros no catálogo.
+- **Validação de Dados**: Garantia de que todas as entradas e saídas estejam em conformidade com os esquemas definidos.
+- **Testes Automatizados**: Cobertura de testes unitários e de integração para garantir a qualidade e a confiabilidade da API.
+
+Este projeto destaca a aplicação prática de conhecimentos em desenvolvimento de APIs, testes automáticos e gerenciamento de banco de dados, demonstrando habilidades técnicas e atenção aos detalhes na entrega de uma solução completa e funcional.
+
+
 ## Rotas da API
 
 ### POST /cars
