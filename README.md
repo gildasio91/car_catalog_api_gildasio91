@@ -93,7 +93,7 @@
 - Status 400: Corpo da requisição inválido.
 - Status 404: Carro não encontrado.
 
-### DELETE /cars/{id}
+### DELETE /cars/:id
 
 **Descrição**: Rota para exclusão de um carro.
 
@@ -124,6 +124,7 @@
 5. Execute as migrações do banco de dados:
     ```bash
     npm migrate:dev
+    
     npm migrate:test
     ```
 
@@ -137,6 +138,8 @@
 Os testes de todas as rotas e serviços foram implementados, cobrindo todos os casos previstos de sucesso e erro. Para executar os testes, utilize o comando:
     ```bash
     npm test:unit
+     ```
+      ```bash
     npm test:integration
     ```
 
